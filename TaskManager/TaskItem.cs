@@ -12,5 +12,8 @@ namespace TaskManager {
             ID = _nextId++;
             Title = title;
         }
+        public static void UpdateNextId(int currentMaxId) {
+            _nextId = currentMaxId + 1;
+        }
     }
 }
